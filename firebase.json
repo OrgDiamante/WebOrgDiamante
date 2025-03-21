@@ -1,0 +1,68 @@
+{
+  "database": {
+    "rules": "database.rules.json"
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log"
+      ]
+    }
+  ],
+  "hosting": {
+    "public": "public",
+    "cleanUrls":true,
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ], 
+    "rewrites": [
+      {
+        "source": "/api/save",
+        "function": "saveData"
+      },
+      {
+        "source": "/api/delete",
+        "function": "deleteData"
+      },
+      {
+        "source": "/api/read",
+        "function": "requestData"
+      },
+      {
+        "source": "/api/sendEmail",
+        "function": "sendEmail"
+      },
+      {
+        "source": "/api/redirects",
+        "function": "redirects"
+      },
+      {
+        "source": "/api/registerUser",
+        "function": "registerUser"
+      },
+      {
+        "source": "/api/loginUser",
+        "function": "loginUser"
+      },
+      {
+       "source": "/api/mpTest",
+       "function": "mercadoPagoTestRequest" 
+      },
+      {
+        "source": "/api/paymentTest",
+        "function": "paymentTest" 
+      },
+      {
+        "source": "/api/fridayPhoneLogin",
+        "function": "getFridayUser"
+      }
+    ]
+  }
+}

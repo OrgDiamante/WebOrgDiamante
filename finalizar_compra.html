@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Organização Diamante - Em Construção</title>
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+    <link rel="shortcut icon" href="https://firebasestorage.googleapis.com/v0/b/organizacaodiamanteltda.appspot.com/o/logos%2Ficon_100-100.png?alt=media&token=93b1db01-4837-4de1-ad0a-deb0eef36102" />
+    <!-- plugins:css -->
+    <link rel="stylesheet" href="vendors/feather/feather.css">
+    <link rel="stylesheet" href="vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="vendors/ti-icons/css/themify-icons.css">
+    <link rel="stylesheet" href="vendors/typicons/typicons.css">
+    <link rel="stylesheet" href="vendors/simple-line-icons/css/simple-line-icons.css">
+    <link rel="stylesheet" href="vendors/css/vendor.bundle.base.css">
+    <!-- endinject -->
+    <!-- Plugin css for this page -->
+    <link rel="stylesheet" href="vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="js/select.dataTables.min.css">
+    <!-- End plugin css for this page -->
+    <!-- inject:css -->
+    <link rel="stylesheet" href="css/vertical-layout-light/style.css">
+</head>
+
+<body>
+    <div class="container-scroller"> 
+        <div class="main-panel" style="width: 100%; height: 100%;">
+            <div class="content-wrapper">
+              <div class="row">
+                <div class="col-sm-12">
+                  <div class="home-tab">
+
+                    <div class="tab-content tab-content-basic">
+                      <div class="tab-pane fade show active" id="overview" role="tabpanel" aria-labelledby="overview"> 
+                        <div class="row">
+                        <!-- INÍCIO - CARD DE TERRENO  -->
+                          <div class="col-lg-8 d-flex flex-column">
+                            <div class="row flex-grow">
+                                <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                                  <div class="card card-rounded" id="card_info_terreno">
+                                    <label class="form-check-label" style="margin-top: 10px;">
+                                        <input type="checkbox" class="form-check-input" id="check_terreno">
+                                        <b>Eu concordo que desejo adquirir esta Unidade Autônoma</b>
+                                    </label>
+                                  </div>
+                                </div>
+                            </div>
+                          </div>
+                        <!-- FIM - CARD DE TERRENO -->
+                        <!-- INÍCIO - CARD DE TERMOS  -->
+                        <div class="col-lg-4 d-flex flex-column">
+                            <div class="row flex-grow">
+                                <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                                    <div class="card card-rounded" id="card_termos" style="height: 100%; display: flex; flex-direction: column; min-height: 100%;">
+                                        <div class="card-body d-flex flex-column" style="flex-grow: 1; height: 100%;">
+                                            <h2>Termos de Serviço e Compra</h2>
+
+                                            <div class="d-flex justify-content-center align-items-end" style="margin-top: auto;">
+                                                <label class="form-check-label" style="margin-top: 10px;">
+                                                    <input type="checkbox" class="form-check-input" id="check_termos">
+                                                    <b>Eu concordo que li e aceito os Termos de Serviço e Compra</b>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- FIM - CARD DE TERMOS -->
+
+       
+                        </div>
+                        <div class="row">
+                            <!-- INÍCIO - CARD USER DATA  -->
+                              <div class="col-lg-8 d-flex flex-column">
+                                <div class="row flex-grow">
+                                    <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                                      <div class="card card-rounded" id="card_user_info">
+                                        <form class="forms-sample" style="padding: 5%;">
+                                            <div class="form-group">
+                                              <label for="exampleInputName1">Nome Completo</label>
+                                              <input type="text" class="form-control" id="exampleInputName1" placeholder="Name">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleInputEmail3">Email address</label>
+                                              <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleInputPassword4">Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                                              <label for="exampleInputPassword4">Password</label>
+                                              <input type="password" class="form-control" id="exampleInputPassword4" placeholder="Password">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleSelectGender">Gender</label>
+                                                <select class="form-control" id="exampleSelectGender">
+                                                  <option>Male</option>
+                                                  <option>Female</option>
+                                                </select>
+                                              </div>
+                                            <div class="form-group">
+                                              <label>File upload</label>
+                                              <input type="file" name="img[]" class="file-upload-default">
+                                              <div class="input-group col-xs-12">
+                                                <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Image">
+                                                <span class="input-group-append">
+                                                  <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
+                                                </span>
+                                              </div>
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleInputCity1">City</label>
+                                              <input type="text" class="form-control" id="exampleInputCity1" placeholder="Location">
+                                            </div>
+                                            <div class="form-group">
+                                              <label for="exampleTextarea1">Textarea</label>
+                                              <textarea class="form-control" id="exampleTextarea1" rows="4"></textarea>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary me-2">Submit</button>
+                                            <button class="btn btn-light">Cancel</button>
+                                          </form>
+                                      </div>
+                                    </div>
+                                </div>
+                              </div>
+                            <!-- FIM - IUSER DATA -->
+                            <!-- INÍCIO - PAYMENT  -->
+                            <div class="col-lg-4 d-flex flex-column">
+                                <div class="row flex-grow">
+                                    <div class="col-12 col-lg-4 col-lg-12 grid-margin stretch-card">
+                                        <div class="card card-rounded" id="card_termos" style="height: 100%; display: flex; flex-direction: column; min-height: 100%;">
+                                            <div class="card-body d-flex flex-column" style="flex-grow: 1; height: 100%;">
+                                                <h2>Termos de Serviço e Compra</h2>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- FIM - PAYMENT -->
+    
+           
+                            </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- content-wrapper ends -->
+            <!-- partial:partials/_footer.html -->
+            <footer class="footer">
+              <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Premium <a href="https://www.bootstrapdash.com/" target="_blank">Bootstrap admin template</a> from BootstrapDash.</span>
+                <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Copyright © 2021. All rights reserved.</span>
+              </div>
+            </footer>
+            <!-- partial -->
+        </div>
+      <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+  
+    <!-- plugins:js -->
+    <script src="vendors/js/vendor.bundle.base.js"></script>
+    <!-- endinject -->
+    <!-- Plugin js for this page -->
+    <script src="vendors/chart.js/Chart.min.js"></script>
+    <script src="vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="vendors/progressbar.js/progressbar.min.js"></script>
+  
+    <!-- End plugin js for this page -->
+    <!-- inject:js -->
+    <script src="js/off-canvas.js"></script>
+    <script src="js/hoverable-collapse.js"></script>
+    <script src="js/template.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/todolist.js"></script>
+    <!-- endinject -->
+    <!-- Custom js for this page-->
+    <script src="js/dashboard.js"></script>
+    <script src="js/Chart.roundedBarCharts.js"></script>
+    <!-- End custom js for this page-->
+
+    <script src="js/finalizar_compra.js"></script>
+  </body>
+
+</html>

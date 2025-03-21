@@ -1,0 +1,8 @@
+{
+  "firebase": {
+    "projectId": "organizacaodiamanteltda",
+    "databaseURL": "https://organizacaodiamanteltda-default-rtdb.firebaseio.com",
+    "storageBucket": "organizacaodiamanteltda.appspot.com",
+    "locationId": "us-central"
+  }
+}
